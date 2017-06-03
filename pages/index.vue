@@ -1,12 +1,12 @@
 <template>
-  <section class="blocks">
+  <div class="blocks">
     <div class="block-left">
       <left/>
     </div>
     <div class="block-right">
       <right />
     </div>
-  </section>
+  </div>
 </template>
 
 <script>
@@ -35,17 +35,12 @@ export default {
 
   .block-right {
     /* Positioning */
-    position: absolute;
-    right: 0;
+    margin-left: 50%;
 
     /* Sizing */
+    min-height: 100%;
     width: 50%;
   }
-}
-
-.container {
-  /* Fill entire screen */
-  min-height: 100vh;
 }
 
 .block-left {
@@ -56,6 +51,5 @@ export default {
 .block-right {
   /* Sizing */
   min-height: 100%;
-  height: auto;
 }
 </style>

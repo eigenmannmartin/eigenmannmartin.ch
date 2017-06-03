@@ -1,12 +1,11 @@
 <template>
   <section class="left-root">
     <div class="inner">
-      <h3>Hi. I am <span class="accent">Martin</span>,</h3>
+      <h3>Hi. I'm <span class="accent">Martin</span></h3>
       <p>
-        a Swiss
         <vue-typer
-          :text='["developer", "perfectionist", "entrepreneur", "friend"]'
-          :shuffle='true'
+          :text='["Developer", "Perfectionist", "Entrepreneur", "Friend"]'
+          :shuffle='false'
           erase-style='backspace'
           :erase-delay='50'
           initial-action='typing'
@@ -57,6 +56,7 @@
   text-decoration: underline;
   color: inherit;
   cursor: pointer;
+  font-size: smaller;
 }
 
 .social > a {
