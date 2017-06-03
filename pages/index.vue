@@ -10,8 +10,8 @@
 </template>
 
 <script>
-import Left from '~components/Left';
-import Right from '~components/Right';
+import Left from '~components/Left'
+import Right from '~components/Right'
 
 export default {
   components: {
