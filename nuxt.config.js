@@ -16,6 +16,14 @@ module.exports = {
     ]
   },
   /*
+  ** Plugins
+  */
+  plugins: [{
+    src: '~plugins/vue-typer',
+    injectAs: 'vue-typer',
+    ssr: false
+  }],
+  /*
   ** Customize the progress-bar color
   */
   loading: { color: '#E9E9FF' },

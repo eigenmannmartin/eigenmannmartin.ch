@@ -4,9 +4,16 @@
       <h3>Hi. I am <span class="accent">Martin</span>,</h3>
       <p>
         a Swiss
-        <span class="accent">full stack developer</span>
-        and
-        <span class="accent">perfectionist</span>
+        <vue-typer
+          :text='["developer", "perfectionist", "entrepreneur", "friend"]'
+          :shuffle='true'
+          erase-style='backspace'
+          :erase-delay='50'
+          initial-action='typing'
+          :pre-type-delay='1000'
+          caret-animation='smooth'
+          initialAction='erasing'
+        />
         <br />
         working at <a class="workplace" href="https://www.kssg.ch">KSSG</a>
       </p>
@@ -20,7 +27,6 @@
 </template>
 
 <style scoped>
-
 .left-root {
   display: flex;
   min-height: 100%;
@@ -60,4 +66,16 @@
   cursor: pointer;
 }
 
+</style>
+
+<style>
+.vue-typer .custom.char {
+  color: #a3f1ff;
+  font-weight: 900;
+}
+
+.vue-typer .custom.caret {
+  width: 10px;
+  background-color: #a3f1ff;
+}
 </style>

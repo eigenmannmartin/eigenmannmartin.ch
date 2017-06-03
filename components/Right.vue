@@ -11,7 +11,7 @@
         but stronly believe that every project deserves a technology stack based on a proper evaluation of all requirements.
       </p>
       <p>
-        Once I am not running or socializing, I love discovering new technologies.
+        When I am not jogging or socializing, I love to discover new technologies.
         My latest discoveries are:
         <span class="light-accent">vue.js</span> and <span class="light-accent">TensorFlow</span>.
       </p>
