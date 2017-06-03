@@ -22,32 +22,40 @@ export default {
 </script>
 
 <style>
+@media screen and (min-width: 600px) {
+  .block-left {
+    /* Positioning */
+    position: fixed;
+    left: 0;
+
+    /* Sizing (fixed height) */
+    height: 100%;
+    width: 50%;
+  }
+
+  .block-right {
+    /* Positioning */
+    position: absolute;
+    right: 0;
+
+    /* Sizing */
+    width: 50%;
+  }
+}
+
 .container {
   /* Fill entire screen */
   min-height: 100vh;
 }
 
 .block-left {
-  /* Positioning */
-  position: fixed;
-  left: 0;
-
-  /* Sizing (fixed height) */
-  height: 100%;
-  width: 50%;
-
   /* Background */
   background-color: #3F769E;
 }
 
 .block-right {
-  /* Positioning */
-  position: absolute;
-  right: 0;
-
   /* Sizing */
   min-height: 100%;
   height: auto;
-  width: 50%;
 }
 </style>

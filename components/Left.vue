@@ -35,6 +35,9 @@
 
   /* Font coloring */
   color: #E9E9FF;
+
+  /* Spacint for text wrap */
+  padding: 0 1rem 0;
 }
 
 .accent {

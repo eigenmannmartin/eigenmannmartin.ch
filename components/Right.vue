@@ -3,7 +3,7 @@
     <section>
       <p>
         <span class="accent">Hey there.</span>
-        I'm a full stack developer born and educated in Switzerland and currenlty working for the hospital in my home town.
+        I'm a full stack developer born and educated in Switzerland; currenlty working for the hospital in my home town.
       </p>
       <p>
         I work mainly with
@@ -11,7 +11,7 @@
         but stronly believe that every project deserves a technology stack based on a proper evaluation of all requirements.
       </p>
       <p>
-        Once I am not doing sports or social activity, I love discovering new technologies and frameworks.
+        Once I am not running or socializing, I love discovering new technologies.
         My latest discoveries are:
         <span class="light-accent">vue.js</span> and <span class="light-accent">TensorFlow</span>.
       </p>
