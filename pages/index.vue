@@ -1,5 +1,6 @@
 <template>
   <div class="blocks">
+
     <div class="block-left">
       <left/>
     </div>
@@ -46,10 +47,15 @@ export default {
 .block-left {
   /* Background */
   background-color: #3F769E;
+  background-image: url('/me.jpg');
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: top;
 }
 
 .block-right {
   /* Sizing */
   min-height: 100%;
 }
+
 </style>
