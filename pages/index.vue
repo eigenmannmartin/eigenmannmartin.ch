@@ -1,6 +1,5 @@
 <template>
   <div class="blocks">
-
     <div class="block-left">
       <left/>
     </div>

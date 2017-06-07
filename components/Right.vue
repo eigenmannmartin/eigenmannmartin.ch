@@ -15,7 +15,7 @@
         <p>
           When I am not jogging or socializing, I love to discover new technologies.
           My latest discoveries are
-          <a href="https://github.com/eigenmannmartin/eigenmannmartin.ch">vue</a> and <span class="light-accent">TensorFlow</span>.
+          <a href="https://github.com/eigenmannmartin/eigenmannmartin.ch">vue</a> and <span class="light-accent"><nuxt-link to="/experiments/TensorFlow">TensorFlow</nuxt-link></span>.
         </p>
         <p>
           You can find my <a href="/cv.pdf">CV</a> on <a href="https://github.com/eigenmannmartin/CV">github</a>.
