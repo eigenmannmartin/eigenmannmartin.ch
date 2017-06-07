@@ -5,16 +5,16 @@
       <section class="wrapper">
         <p>
           <span class="accent">Hey there.</span>
-          I'm a full stack developer born and educated in Switzerland; currently working for the hospital in my home town.
+          I'm a full stack developer born and educated in Switzerland; currently working for the hospital in my hometown.
         </p>
         <p>
           I mainly work with
           <span class="light-accent">node</span> and <span class="light-accent">react</span>
-          but strongly believe that every project deserves a technology stack based on a proper evaluation of all requirements.
+          but strongly believe that every project deserves a technology stack based on a proper evaluation of all its requirements.
         </p>
         <p>
           When I am not jogging or socializing, I love to discover new technologies.
-          My latest discoveries are:
+          My latest discoveries are
           <a href="https://github.com/eigenmannmartin/eigenmannmartin.ch">vue</a> and <span class="light-accent">TensorFlow</span>.
         </p>
         <p>
