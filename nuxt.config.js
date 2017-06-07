@@ -33,7 +33,7 @@ module.exports = {
   */
   css: [
     'normalize.css',
-    join(__dirname, 'css/fontello-embedded.css'),
+    join(__dirname, 'css/fontello.css'),
     join(__dirname, 'css/typebase.css')
   ],
   /*
