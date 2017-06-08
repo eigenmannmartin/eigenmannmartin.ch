@@ -43,7 +43,6 @@ module.exports = {
     vendor: [
       'babel-polyfill'
     ],
-    extractCSS: true,
     postcss: [
       require('autoprefixer')({
         browsers: ['IE 10', 'IE 11', 'last 10 versions']
