@@ -1,5 +1,5 @@
 <template>
-  <section class="left-root">
+  <section class="root">
     <div class="inner">
       <h3>Hi. I'm <span class="accent">Martin</span></h3>
       <p>
@@ -26,22 +26,26 @@
 </template>
 
 <style scoped>
-.left-root {
-  display: flex;
-  min-height: 100%;
+.root {
+  /* Do not stick it all the way to the bottom */
+  height: 90%;
+
+  /* Cross-browser display: flex; justify-content: center; */
+  display: table;
+  margin: 0 auto;
 }
 
 .inner {
-  /* Positioning at the bottom */
-  align-self: flex-end;
+  /* Cross-browser display: flex; self-align: flex-end; */
+  display: table-cell;
+  vertical-align: bottom;
+
   text-align: center;
-  width: 100%;
-  margin-bottom: 15vh;
 
   /* Font coloring */
   color: #E9E9FF;
 
-  /* Spacint for text wrap */
+  /* Spacing for text wrap */
   padding: 0 1rem 0;
 }
 
@@ -65,7 +69,6 @@
   padding: 0.25rem;
   cursor: pointer;
 }
-
 </style>
 
 <style>

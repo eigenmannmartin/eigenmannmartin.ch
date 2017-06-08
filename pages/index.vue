@@ -23,7 +23,7 @@ export default {
 </script>
 
 <style>
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 800px) {
   .block-left {
     /* Positioning */
     position: fixed;

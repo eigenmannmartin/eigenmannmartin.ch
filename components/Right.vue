@@ -1,8 +1,8 @@
 <template>
   <div>
     <particles class="particles" />
-    <div class="inner">
-      <section class="wrapper">
+    <div class="wrapper">
+      <section class="inner">
         <p>
           <span class="accent">Hey there.</span>
           I'm a full stack developer born and educated in Switzerland; currently working for the hospital in my hometown.
@@ -38,16 +38,23 @@ export default {
 <style scoped>
 /* CONTAINERS */
 .wrapper {
-    padding: 1rem;
-    max-width: 28rem;
-    z-index: 200;
+  min-height: 100vh;
+  max-width: 26rem;
+  height: 100%;
+  padding: 0 1rem;
+
+  /* Cross-browser display: flex; justify-content: center; */
+  display: table;
+  margin: 0 auto;
 }
 
 .inner {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  /* Cross-browser display: flex; align-items: center; */
+  display: table-cell;
+  vertical-align: middle;
+
+  /* Force text on top of particles*/
+  z-index: 200;
 }
 
 .particles {
