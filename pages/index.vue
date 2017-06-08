@@ -51,6 +51,8 @@ export default {
   background-size: cover;
   background-position-x: center;
   background-position-y: top;
+
+  height: 100vh;
 }
 
 .block-right {
