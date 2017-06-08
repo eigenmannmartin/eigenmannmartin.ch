@@ -2,7 +2,7 @@
   <section class="root">
     <div class="inner">
       <h3>Hi. I'm <span class="accent">Martin</span></h3>
-      <p>
+      <p v-if="showTyper">
         <vue-typer
           :text='["Developer", "Perfectionist", "Entrepreneur", "Friend"]'
           :shuffle='false'
@@ -24,6 +24,20 @@
     </div>
   </section>
 </template>
+
+<script>
+export default {
+  data () {
+    return {
+      showTyper: false
+    }
+  },
+  mounted () {
+    // showTyper will only be set to true on the client. This keeps the DOM-tree in sync.
+    this.showTyper = true
+  }
+}
+</script>
 
 <style scoped>
 .root {
