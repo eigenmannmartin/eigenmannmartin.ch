@@ -5,15 +5,20 @@
   "author": "Martin Eigenmann <github@eigenmannmartin.ch>",
   "private": true,
   "dependencies": {
-    "normalize.css": "^7.0.0",
-    "nuxt": "latest",
-    "particles.js": "^2.0.0",
-    "surge": "^0.19.0",
-    "vue-typer": "^1.0.4"
+    "compression": "^1.6.2",
+    "express": "4.15.3",
+    "express-sslify": "1.2.0",
+    "helmet": "3.6.1",
+    "morgan": "^1.8.2",
+    "normalize.css": "7.0.0",
+    "nuxt": "1.0.0-alpha.4",
+    "particles.js": "2.0.0",
+    "surge": "0.19.0",
+    "vue-typer": "1.0.4"
   },
   "engines": {
-    "node": "^8.0.0",
-    "yarn": "^0.24.6"
+    "node": "8.1.0",
+    "yarn": "0.24.6"
   },
   "config": {
     "nuxt": {
@@ -21,24 +26,23 @@
     }
   },
   "scripts": {
-    "dev": "nuxt",
+    "dev": "node --harmony server.js",
     "build": "nuxt build",
-    "start": "nuxt start",
-    "deploy": "yarn run generate && surge dist/ --domain eigenmannmartin.ch",
+    "start": "NODE_ENV=production node --harmony server.js",
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore --fix .",
     "precommit": "yarn run lint",
     "postinstall": "yarn run build"
   },
   "devDependencies": {
-    "babel-eslint": "^7.1.1",
-    "eslint": "^3.15.0",
-    "eslint-config-standard": "^10.2.1",
-    "eslint-loader": "^1.6.1",
-    "eslint-plugin-html": "^2.0.0",
-    "eslint-plugin-import": "^2.3.0",
-    "eslint-plugin-node": "^5.0.0",
-    "eslint-plugin-promise": "^3.4.1",
-    "eslint-plugin-standard": "^3.0.1"
+    "babel-eslint": "^7.2.3",
+    "eslint": "^3.19.0",
+    "eslint-config-standard": "10.2.1",
+    "eslint-loader": "^1.7.1",
+    "eslint-plugin-html": "^2.0.3",
+    "eslint-plugin-import": "2.3.0",
+    "eslint-plugin-node": "5.0.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "3.0.1"
   }
 }
