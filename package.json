@@ -5,6 +5,7 @@
   "author": "Martin Eigenmann <github@eigenmannmartin.ch>",
   "private": true,
   "dependencies": {
+    "@nuxtjs/axios": "^2.0.3",
     "apicache": "0.8.6",
     "axios": "^0.16.2",
     "compression": "^1.6.2",
@@ -12,12 +13,13 @@
     "express-request-proxy": "^2.0.0",
     "express-sslify": "1.2.0",
     "helmet": "3.6.1",
+    "marked": "0.3.6",
+    "meta-marked": "0.4.2",
     "morgan": "^1.8.2",
     "nodemon": "1.11.0",
     "normalize.css": "7.0.0",
     "nuxt": "1.0.0-alpha.4",
     "particles.js": "2.0.0",
-    "surge": "0.19.0",
     "vue-typer": "1.0.4"
   },
   "engines": {
@@ -30,7 +32,7 @@
     }
   },
   "scripts": {
-    "dev": "nodemon --harmony server",
+    "dev": "nodemon --watch server/ --harmony server",
     "build": "nuxt build",
     "start": "NODE_ENV=production node --harmony server",
     "generate": "nuxt generate",

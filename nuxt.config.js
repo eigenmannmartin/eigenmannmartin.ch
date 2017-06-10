@@ -24,6 +24,9 @@ module.exports = {
     injectAs: 'vue-typer',
     ssr: false
   }],
+  modules: [
+    ['@nuxtjs/axios', { credentials: false }]
+  ],
   /*
   ** Customize the progress-bar color
   */

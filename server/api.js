@@ -1,6 +1,7 @@
 const apicache = require('apicache')
 const express = require('express')
 const axios = require('axios')
+const marked = require('meta-marked')
 
 const cache = apicache.options({ statusCodes: { include: [200, 304] } }).middleware
 const githubToken = process.env.GITHUB_TOKEN
@@ -22,11 +23,13 @@ router.get('/cache/clear/:target?', (req, res) => res.json(apicache.clear(req.pa
 // Request Gist
 router.get('/posts', cache(), (req, res, next) => {
   axios.get(`https://api.github.com/gists/${gistId}`, { headers: { 'Authorization': `token ${githubToken}` } })
-    .then((response) => response.data.files)
-    .then((files) => Object.keys(files)
+    .then(response => response.data.files)
+    .then(files => Object.keys(files)
       .filter(key => /\.post\.md$/.test(key))
       .map(key => files[key]))
-    .then((posts) => res.json(posts))
+    .then(posts => posts.map(p => p.content))
+    .then(posts => posts.map(p => marked(p)))
+    .then(posts => res.json(posts))
 })
 
 module.exports = router
