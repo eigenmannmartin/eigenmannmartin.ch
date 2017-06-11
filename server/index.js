@@ -30,7 +30,7 @@ app.use('/api', api)
 app.use(nuxt.render)
 
 app.listen(PORT, function () {
-  console.log(`Server is listening on http://0.0.0.0:${PORT}`)
+  console.log(`Server is listening on port '${PORT}'`)
 })
 
 // Execute build in development

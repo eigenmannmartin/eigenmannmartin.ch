@@ -11,13 +11,13 @@
 </template>
 
 <script>
-import Left from '~components/Left'
-import Right from '~components/Right'
+import left from '~components/left'
+import right from '~components/right'
 
 export default {
   components: {
-    Left,
-    Right
+    left,
+    right
   }
 }
 </script>

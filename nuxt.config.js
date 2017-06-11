@@ -19,11 +19,18 @@ module.exports = {
   /*
   ** Plugins
   */
-  plugins: [{
-    src: '~plugins/vue-typer',
-    injectAs: 'vue-typer',
-    ssr: false
-  }],
+  plugins: [
+    {
+      src: '~plugins/vue-typer',
+      injectAs: 'vue-typer',
+      ssr: false
+    },
+    {
+      src: '~plugins/vue-moment',
+      injectAs: 'vue-moment',
+      ssr: true
+    }
+  ],
   modules: [
     ['@nuxtjs/axios', { credentials: false }]
   ],
@@ -44,7 +51,8 @@ module.exports = {
   */
   build: {
     vendor: [
-      'babel-polyfill'
+      'babel-polyfill',
+      'axios'
     ],
     postcss: [
       require('autoprefixer')({

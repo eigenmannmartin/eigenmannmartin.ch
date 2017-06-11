@@ -1,6 +1,7 @@
 const apicache = require('apicache')
 const express = require('express')
 const axios = require('axios')
+const slugify = require('slugify')
 const marked = require('meta-marked')
 
 const cache = apicache.options({ statusCodes: { include: [200, 304] } }).middleware
@@ -24,11 +25,28 @@ router.get('/cache/clear/:target?', (req, res) => res.json(apicache.clear(req.pa
 router.get('/posts', cache(), (req, res, next) => {
   axios.get(`https://api.github.com/gists/${gistId}`, { headers: { 'Authorization': `token ${githubToken}` } })
     .then(response => response.data.files)
+
+    // Only return posts (*.post.md)
     .then(files => Object.keys(files)
       .filter(key => /\.post\.md$/.test(key))
-      .map(key => files[key]))
-    .then(posts => posts.map(p => p.content))
-    .then(posts => posts.map(p => marked(p)))
+      .map(key => files[key].content))
+
+    // Extract meta data with meta-marked
+    .then(contents => contents.map(c => marked(c)))
+
+    // Only use published posts
+    .then(posts => posts.filter(p => p.meta.publishedAt))
+
+    // Return a well-defined json-object
+    .then(posts => posts.map(p => ({
+      meta: {
+        title: p.meta.title || '',
+        publishedAt: new Date(p.meta.publishedAt),
+        slug: slugify(p.meta.title)
+      },
+      content: p.markdown || ''
+    })))
+    .then(posts => posts.sort((a, b) => a.meta.publishedAt < b.meta.publishedAt))
     .then(posts => res.json(posts))
 })
 
