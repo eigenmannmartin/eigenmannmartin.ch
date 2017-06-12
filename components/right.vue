@@ -63,9 +63,6 @@
   }
 
   p {
-    /* Text styling */
     margin-top: 0.5rem;
-    color: rgba(51,51,51,.6);
-    font-size: 0.75rem;
   }
 </style>

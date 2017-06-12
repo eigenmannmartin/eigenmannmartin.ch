@@ -23,7 +23,7 @@ router.get('/cache/index', (req, res) => res.json(apicache.getIndex()))
 router.get('/cache/clear/:target?', (req, res) => res.json(apicache.clear(req.params.target)))
 
 // Request Gist
-router.get('/posts', cache(), (req, res, next) => {
+router.get('/posts', cache(), (req, res) => {
   axios.get(`https://api.github.com/gists/${gistId}`, { headers: { 'Authorization': `token ${githubToken}` } })
     .then(response => response.data.files)
 
@@ -33,7 +33,7 @@ router.get('/posts', cache(), (req, res, next) => {
       .map(key => files[key].content))
 
     // Extract meta data with meta-marked
-    .then(contents => contents.map(c => marked(c)))
+    .then(contents => contents.map(content => marked(content)))
 
     // Only use published posts and sort by this publishedAt
     .then(posts => posts.filter(p => p.meta.publishedAt))

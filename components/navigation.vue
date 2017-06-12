@@ -30,13 +30,12 @@
   }
 
   .link:hover {
-    background: lightgrey;
+    background: #a3f1ff;
   }
 
   .time {
     /* Time is meta information */
-    color: grey;
+    color: #3F769E;
     font-size: 75%;
-    line-height: 1;
   }
 </style>
