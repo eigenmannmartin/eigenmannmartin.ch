@@ -3,6 +3,7 @@ const express = require('express')
 const axios = require('axios')
 const slugify = require('slugify')
 const marked = require('meta-marked')
+const moment = require('moment')
 
 const cache = apicache.options({ statusCodes: { include: [200, 304] } }).middleware
 const githubToken = process.env.GITHUB_TOKEN
@@ -34,20 +35,26 @@ router.get('/posts', cache(), (req, res, next) => {
     // Extract meta data with meta-marked
     .then(contents => contents.map(c => marked(c)))
 
-    // Only use published posts
+    // Only use published posts and sort by this publishedAt
     .then(posts => posts.filter(p => p.meta.publishedAt))
+    .then(posts => posts.sort((a, b) => a.meta.publishedAt < b.meta.publishedAt))
 
     // Return a well-defined json-object
     .then(posts => posts.map(p => ({
       meta: {
         title: p.meta.title || '',
-        publishedAt: new Date(p.meta.publishedAt),
+        publishedAt: moment(new Date(p.meta.publishedAt)).format('MMMM Do YYYY'),
         slug: slugify(p.meta.title)
       },
-      content: p.markdown || ''
+      content: p.html || ''
     })))
-    .then(posts => posts.sort((a, b) => a.meta.publishedAt < b.meta.publishedAt))
     .then(posts => res.json(posts))
+
+    // Give nice Error messages if something does break
+    .catch((err) => {
+      res.status(500).send('Wups! Something broke.')
+      console.error(err.message, err.stack)
+    })
 })
 
 module.exports = router

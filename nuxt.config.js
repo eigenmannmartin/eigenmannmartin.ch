@@ -24,11 +24,6 @@ module.exports = {
       src: '~plugins/vue-typer',
       injectAs: 'vue-typer',
       ssr: false
-    },
-    {
-      src: '~plugins/vue-moment',
-      injectAs: 'vue-moment',
-      ssr: true
     }
   ],
   modules: [
@@ -50,13 +45,10 @@ module.exports = {
   ** Build configuration
   */
   build: {
-    vendor: [
-      'babel-polyfill',
-      'axios'
-    ],
+    vendor: ['~/plugins/vue-typer'],
     postcss: [
       require('autoprefixer')({
-        browsers: ['IE 10', 'IE 11', 'last 10 versions']
+        browsers: ['> 5%', 'last 10 versions']
       })
     ]
   }

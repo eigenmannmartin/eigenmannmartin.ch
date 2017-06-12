@@ -8,8 +8,7 @@ const api = require('./api')
 const app = require('express')()
 
 const isProd = process.env.NODE_ENV === 'production'
-const nuxt = new Nuxt({ ...require('../nuxt.config.js'), dev: !isProd })
-const PORT = process.env.PORT
+const nuxt = new Nuxt(require('../nuxt.config.js'))
 
 if (isProd) {
   // Always user HTTPS
@@ -20,6 +19,9 @@ if (isProd) {
 
   // Compression
   app.use(compression())
+} else {
+  // Execute build in development
+  nuxt.build()
 }
 
 // Logging
@@ -29,9 +31,4 @@ app.use(morgan('tiny'))
 app.use('/api', api)
 app.use(nuxt.render)
 
-app.listen(PORT, function () {
-  console.log(`Server is listening on port '${PORT}'`)
-})
-
-// Execute build in development
-if (!isProd) nuxt.build()
+app.listen(process.env.PORT)
