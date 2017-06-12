@@ -33,5 +33,6 @@
     padding: 1rem;
     width: auto;
     width: 100%;
+    overflow-x: auto;
   }
 </style>
