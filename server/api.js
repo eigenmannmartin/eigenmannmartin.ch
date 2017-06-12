@@ -18,6 +18,13 @@ if (!githubToken) {
   throw new Error(`Github Token not provided. You will be rate limited.`)
 }
 
+// Setup highlighting
+marked.setOptions({
+  highlight: function (code) {
+    return require('highlight.js').highlightAuto(code).value
+  }
+})
+
 // Caching
 router.get('/cache/index', (req, res) => res.json(apicache.getIndex()))
 router.get('/cache/clear/:target?', (req, res) => res.json(apicache.clear(req.params.target)))

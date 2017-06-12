@@ -10,7 +10,10 @@
   /* Sizing */
   .markdown {
     margin: 1rem 0 0;
-    max-width: 26rem;
+  }
+
+  .markdown > p {
+    max-width: 30rem;
   }
 
   /* Text styling */
@@ -22,5 +25,13 @@
   .markdown > p {
     margin: 1rem 0 0;
     line-height: 1.5;
+  }
+
+  .markdown > pre {
+    background: #002b36;
+    color: #839496;
+    padding: 1rem;
+    width: auto;
+    width: 100%;
   }
 </style>

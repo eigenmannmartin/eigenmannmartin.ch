@@ -12,6 +12,7 @@
     "express-request-proxy": "^2.0.0",
     "express-sslify": "1.2.0",
     "helmet": "3.6.1",
+    "highlight.js": "9.12.0",
     "marked": "0.3.6",
     "meta-marked": "0.4.2",
     "moment": "2.18.1",
