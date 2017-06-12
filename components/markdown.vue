@@ -9,7 +9,7 @@
 <style>
   /* Sizing */
   .markdown {
-    margin: 1rem 0 0;
+    margin: 1rem 0;
   }
 
   .markdown > p {
@@ -31,6 +31,7 @@
     background: #002b36;
     color: #839496;
     padding: 1rem;
+    margin: 3rem 0;
     width: auto;
     width: 100%;
     overflow-x: auto;
