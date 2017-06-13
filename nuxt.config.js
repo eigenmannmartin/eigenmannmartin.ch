@@ -38,7 +38,7 @@ module.exports = {
   */
   css: [
     'normalize.css',
-    join(__dirname, 'node_modules/highlight.js/styles/solarized-dark.css'),
+    join(__dirname, 'node_modules/highlight.js/styles/github.css'),
     join(__dirname, 'css/fontello.css'),
     join(__dirname, 'css/typebase.css')
   ],

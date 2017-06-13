@@ -28,8 +28,6 @@
   }
 
   .markdown > pre {
-    background: #002b36;
-    color: #839496;
     padding: 1rem;
     margin: 3rem 0;
     width: auto;
