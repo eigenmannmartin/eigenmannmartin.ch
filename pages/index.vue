@@ -10,8 +10,8 @@
 </template>
 
 <script>
-  import left from '~components/left'
-  import right from '~components/right'
+  import left from '~/components/left'
+  import right from '~/components/right'
 
   export default {
     components: {
@@ -46,7 +46,7 @@
   .block-left {
     /* Background */
     background-color: #3F769E;
-    background-image: url('/me.jpg');
+    background-image: url('/static/me.jpg');
     background-size: cover;
     background-position-x: center;
     background-position-y: top;

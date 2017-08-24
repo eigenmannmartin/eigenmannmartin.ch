@@ -26,8 +26,8 @@
 </template>
 
 <script>
-  import particles from '~components/particles'
-  import center from '~components/center'
+  import particles from '~/components/particles'
+  import center from '~/components/center'
 
   export default {
     components: {
