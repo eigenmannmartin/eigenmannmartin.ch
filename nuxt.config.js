@@ -26,19 +26,15 @@ module.exports = {
       ssr: false
     }
   ],
-  modules: [
-    ['@nuxtjs/axios', { credentials: false }]
-  ],
   /*
-  ** Customize the progress-bar color
+  ** Disable the progress-bar
   */
-  loading: { color: '#E9E9FF' },
+  loading: false,
   /*
   ** Define global CSS
   */
   css: [
     'normalize.css',
-    join(__dirname, 'node_modules/highlight.js/styles/github.css'),
     join(__dirname, 'css/fontello.css'),
     join(__dirname, 'css/typebase.css')
   ],
