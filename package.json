@@ -23,7 +23,7 @@
   "scripts": {
     "dev": "nuxt dev",
     "build": "nuxt generate",
-    "deploy": "yarn build && surge dist/ --domain eigenmannmartin.surge.sh",
+    "deploy": "yarn build && cp CNAME dist/ && surge dist/",
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore --fix .",
     "precommit": "yarn run lint"
