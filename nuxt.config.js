@@ -9,11 +9,38 @@ module.exports = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Martin\'s peronal page' }
+      {
+        hid: 'description',
+        name: 'description',
+        content: "Martin's peronal page"
+      },
+      { name: 'ROBOTS', content: 'INDEX,FOLLOW' },
+      {
+        name: 'description',
+        content: 'Software engineer happily coding full-stack js'
+      },
+      {
+        itemprop: 'name',
+        content: 'Martin Eigenmann (@eigenmannmartin) on BetaList'
+      },
+      {
+        name: 'keywords',
+        content: 'software,engineer,website,commercial,freelancer'
+      }
     ],
     link: [
-      { rel: 'icon', type: 'image/png', href: '/favicon-32x32.png', sizes: '32x32' },
-      { rel: 'icon', type: 'image/png', href: '/favicon-16x16.png', sizes: '16x16' }
+      {
+        rel: 'icon',
+        type: 'image/png',
+        href: '/favicon-32x32.png',
+        sizes: '32x32'
+      },
+      {
+        rel: 'icon',
+        type: 'image/png',
+        href: '/favicon-16x16.png',
+        sizes: '16x16'
+      }
     ]
   },
   /*
