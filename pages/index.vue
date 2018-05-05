@@ -1,7 +1,10 @@
 <template>
   <div class="blocks">
     <div class="block-left">
-      <left/>
+      <div class="background-image" />
+      <div class="position-fix">
+        <left/>
+      </div>
     </div>
     <div class="block-right">
       <right />
@@ -43,13 +46,33 @@
     }
   }
 
-  .block-left {
-    /* Background */
-    background-color: #3F769E;
-    background-image: url('/static/me.jpg');
+  .background-image {
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('/static/us.png');
     background-size: cover;
     background-position-x: center;
     background-position-y: top;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+  }
+
+  .position-fix {
+    position: absolute;
+    z-index: 1010;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .block-left {
+    /* Background */
+    background-color: #3F769E;
 
     height: 100vh;
   }
