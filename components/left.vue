@@ -14,7 +14,7 @@
           initialAction='erasing'
         />
         <br />
-        working at <a class="workplace" href="https://www.kssg.ch">KSSG</a>
+        working at <a class="workplace" href="https://www.imaginecargo.com/">ImagineCargo</a>
       </p>
       <p class="social">
         <a href="https://linkedin.com/in/eigenmannmartin"><span class="icon-linkedin"/></a>
