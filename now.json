@@ -1,0 +1,6 @@
+{
+  "name": "personal page (eigenmannmartin.ch)",
+  "static": {
+    "public": "dist/"
+  }
+}
