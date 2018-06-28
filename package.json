@@ -16,12 +16,16 @@
       "port": "8080"
     }
   },
+  "engines": {
+    "node": "8.x.x"
+  },
   "scripts": {
     "dev": "nuxt dev",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore --fix .",
+    "test": "yarn run lint",
     "precommit": "yarn run lint"
   },
   "devDependencies": {
@@ -33,6 +37,7 @@
     "eslint-plugin-import": "2.7.0",
     "eslint-plugin-node": "5.1.1",
     "eslint-plugin-promise": "3.5.0",
-    "eslint-plugin-standard": "3.0.1"
+    "eslint-plugin-standard": "3.0.1",
+    "now": "^11.2.4"
   }
 }
