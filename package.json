@@ -20,6 +20,11 @@
       "port": "8080"
     }
   },
+  "now": {
+    "static": {
+      "public": "dist/"
+    }
+  }
   "scripts": {
     "dev": "nuxt dev",
     "build": "nuxt generate",
