@@ -10,10 +10,6 @@
     "particles.js": "2.0.0",
     "vue-typer": "1.0.4"
   },
-  "engines": {
-    "node": "9.10.1",
-    "yarn": "1.6.0"
-  },
   "config": {
     "nuxt": {
       "host": "0.0.0.0",
