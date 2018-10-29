@@ -9,12 +9,18 @@
         </p>
         <p>
           I mainly work with
-          <span class="light-accent">node</span> and <span class="light-accent">react</span>
+          <span class="light-accent">node</span>, <span class="light-accent">django</span>, <span class="light-accent">react</span> and <span class="light-accent">vue</span>
           but strongly believe that every project deserves a technology stack based on a proper evaluation of all its requirements.
         </p>
         <p>
-          When I am not jogging or socializing, I love to discover new technologies.
-          My latest discoveries are <span class="light-accent">vue</span> and <span class="light-accent">TensorFlow</span>.
+          When I am not jogging, socializing or cooking, I love to discover new technologies and products.
+          My latest discoveries are <span class="light-accent">zeit.co</span> and <span class="light-accent">TensorFlow</span>.
+        </p>
+        <p>
+          My latest projects I worked for are <a href="https://rheumafit.ch">rheumafit.ch</a>,
+          an application for people with Morbus Bechterews disease,
+          and <a href="https://www.swissnoso.ch/fileadmin/swissnoso/Dokumente/5_Forschung_und_Entwicklung/4_Bedarfsabklaerung_18/180305_Factsheet_Modul_Clean_Care_Monitor.pdf">Clean Care Monitor</a>,
+          a process audit and validation application for health care.
         </p>
         <p>
           You can find my <a href="/cv.pdf">CV</a> on <a href="https://github.com/eigenmannmartin/CV">github</a>.
