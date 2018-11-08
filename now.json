@@ -1,6 +1,10 @@
 {
+  "version": 2,
   "name": "personal-page",
   "alias": "eigenmannmartin.ch",
+  "builds": [
+    { "src": "package.json", "use": "@now/static-build" }
+  ],
   "scale": {
     "bru1": {
       "min": 1,
