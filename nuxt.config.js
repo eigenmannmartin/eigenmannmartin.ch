@@ -75,5 +75,15 @@ module.exports = {
         browsers: ['> 5%', 'last 10 versions']
       })
     ]
-  }
+  },
+
+  /*
+  ** Use modules
+  */
+  modules: [
+    'nuxt-imagemin',
+    {
+      optipng: { optimizationLevel: 7 }
+    }
+  ]
 }

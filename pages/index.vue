@@ -53,7 +53,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('/static/us.png');
+    background-image: url('~/assets/us.png');
     background-size: cover;
     background-position-x: center;
     background-position-y: top;
