@@ -74,6 +74,25 @@ module.exports = {
       require('autoprefixer')({
         browsers: ['> 5%', 'last 10 versions']
       })
-    ]
+    ],
+    extend (config) {
+      /*
+      ** Let responsive-loader handle jpgs and png
+      */
+      config.module.rules.find(
+        rule => rule.loader === 'url-loader'
+      ).exclude = /\.(jpe?g|png)$/
+
+      /*
+      ** Configure responsive-loader
+      */
+      config.module.rules.push({
+        test: /\.(jpe?g|png)$/i,
+        loader: 'responsive-loader',
+        options: {
+          quality: 60
+        }
+      })
+    }
   }
 }
