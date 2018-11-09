@@ -53,12 +53,26 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('/static/us.png');
+    background-image: url('/static/us.png?size=800');
     background-size: cover;
     background-position-x: center;
     background-position-y: top;
     opacity: 0.8;
     filter: alpha(opacity=80);
+  }
+
+  @media
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi) {
+    .background-image {
+      background-image: url('/static/us.png?size=1600');
+    }
+  }
+  @media
+    (min-width: 800px) {
+    .background-image {
+      background-image: url('/static/us.png?size=2400');
+    }
   }
 
   .position-fix {
