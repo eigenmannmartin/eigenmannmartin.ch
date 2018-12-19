@@ -23,7 +23,7 @@
           a process audit and validation application for health care.
         </p>
         <p>
-          You can find my <a href="/cv.pdf">CV</a> on <a href="https://github.com/eigenmannmartin/CV">github</a>.
+          You can find my <a href="https://cv.eigenmannmartin.ch">CV</a> on <a href="https://github.com/eigenmannmartin/CV">github</a>.
         </p>
       </div>
     </center>
