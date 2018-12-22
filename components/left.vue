@@ -20,6 +20,7 @@
         <a href="https://linkedin.com/in/eigenmannmartin"><span class="icon-linkedin"/></a>
         <a href="https://github.com/eigenmannmartin"><span class="icon-github-circled"/></a>
         <a href="https://twitter.com/eigenmannmartin"><span class="icon-twitter"/></a>
+        <a href="https://blog.eigenmannmartin.ch" class="blogLink">Blog</a>
       </p>
     </div>
   </section>
@@ -94,5 +95,10 @@ export default {
 .vue-typer .custom.caret {
   width: 10px;
   background-color: #a3f1ff;
+}
+
+.blogLink {
+  font-weight: bold;
+  padding-left: 3px;
 }
 </style>
