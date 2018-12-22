@@ -4,15 +4,5 @@
   "alias": "eigenmannmartin.ch",
   "builds": [
     { "src": "package.json", "use": "@now/static-build" }
-  ],
-  "scale": {
-    "bru1": {
-      "min": 1,
-      "max": "auto"
-    },
-    "sfo1": {
-      "min": 0,
-      "max": "auto"
-    }
-  }
+  ]
 }
