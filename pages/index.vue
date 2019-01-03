@@ -54,9 +54,10 @@
     right: 0;
     bottom: 0;
     background-image: url('/static/us.png?size=800');
-    background-size: cover;
+    background-size: contain;
     background-position-x: center;
     background-position-y: top;
+    background-repeat: no-repeat;
     opacity: 0.8;
     filter: alpha(opacity=80);
   }
