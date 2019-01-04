@@ -58,8 +58,7 @@
     background-position-x: center;
     background-position-y: top;
     background-repeat: no-repeat;
-    opacity: 0.8;
-    filter: alpha(opacity=80);
+    margin: 1rem;
   }
 
   @media

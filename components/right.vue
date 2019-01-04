@@ -5,7 +5,7 @@
       <div class="inner">
         <p>
           <span class="accent">Hey there.</span>
-          I'm a full stack developer born and educated in Switzerland; currently working for the hospital in my hometown.
+          I love translating ideas and visions into prototypes and products using my skills as a manager, developer and a human being.
         </p>
         <p>
           I mainly work with

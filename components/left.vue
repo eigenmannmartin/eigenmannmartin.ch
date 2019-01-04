@@ -4,7 +4,7 @@
       <h3>Hi. I'm <span class="accent">Martin</span></h3>
       <p v-if="showTyper">
         <vue-typer
-          :text='["Developer", "Perfectionist", "Entrepreneur", "Friend"]'
+          :text='["Developer", "Perfectionist", "Project Manager", "Friend", "Leader"]'
           :shuffle='false'
           erase-style='backspace'
           :erase-delay='50'
@@ -57,7 +57,6 @@ export default {
   text-align: center;
 
   /* Font coloring */
-  color: #E9E9FF;
 
   /* Spacing for text wrap */
   padding: 0 1rem 0;
@@ -65,7 +64,7 @@ export default {
 
 .accent {
   /* Accent important notes */
-  color: #a3f1ff;
+  color: #2a9aad;
   font-weight: 900;
 }
 
@@ -87,12 +86,12 @@ export default {
 
 <style>
 .vue-typer .custom.char {
-  color: #a3f1ff;
+  color: #2a9aad;
   font-weight: 900;
 }
 
 .vue-typer .custom.caret {
   width: 10px;
-  background-color: #a3f1ff;
+  background-color: #2a9aad;
 }
 </style>
