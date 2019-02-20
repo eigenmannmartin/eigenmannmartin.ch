@@ -1,25 +1,35 @@
 <template>
   <section class="root">
     <div class="inner">
-      <h3>Hi. I'm <span class="accent">Martin</span></h3>
+      <h3>
+        I'm
+        <span class="accent">Martin</span>
+      </h3>
       <p v-if="showTyper">
         <vue-typer
-          :text='["Developer", "Perfectionist", "Project Manager", "Friend", "Leader"]'
-          :shuffle='false'
-          erase-style='backspace'
-          :erase-delay='50'
-          initial-action='typing'
-          :pre-type-delay='1000'
-          caret-animation='smooth'
-          initialAction='erasing'
+          :text="['Developer', 'Perfectionist', 'Project Manager', 'Friend', 'Leader']"
+          :shuffle="false"
+          erase-style="backspace"
+          :erase-delay="50"
+          initial-action="typing"
+          :pre-type-delay="1000"
+          caret-animation="smooth"
+          initialAction="erasing"
         />
-        <br />
-        working at <a class="workplace" href="https://www.imaginecargo.com/">ImagineCargo</a>
+        <br>
+        <span class="workplace-pre">working at&nbsp;</span>
+        <a class="workplace" href="https://www.imaginecargo.com/">IC</a>
       </p>
       <p class="social">
-        <a href="https://linkedin.com/in/eigenmannmartin"><span class="icon-linkedin"/></a>
-        <a href="https://github.com/eigenmannmartin"><span class="icon-github-circled"/></a>
-        <a href="https://twitter.com/eigenmannmartin"><span class="icon-twitter"/></a>
+        <a href="https://linkedin.com/in/eigenmannmartin">
+          <span class="icon-linkedin"/>
+        </a>
+        <a href="https://github.com/eigenmannmartin">
+          <span class="icon-github-circled"/>
+        </a>
+        <a href="https://twitter.com/eigenmannmartin">
+          <span class="icon-twitter"/>
+        </a>
       </p>
     </div>
   </section>
@@ -27,16 +37,16 @@
 
 <script>
 export default {
-  data () {
+  data() {
     return {
       showTyper: false
-    }
+    };
   },
-  mounted () {
+  mounted() {
     // showTyper will only be set to true on the client. This keeps the DOM-tree in sync.
-    this.showTyper = true
+    this.showTyper = true;
   }
-}
+};
 </script>
 
 <style scoped>
@@ -56,8 +66,6 @@ export default {
 
   text-align: center;
 
-  /* Font coloring */
-
   /* Spacing for text wrap */
   padding: 0 1rem 0;
 }
@@ -68,6 +76,9 @@ export default {
   font-weight: 900;
 }
 
+.workplace-pre {
+  font-size: smaller;
+}
 .workplace {
   /* Style link */
   text-decoration: underline;
