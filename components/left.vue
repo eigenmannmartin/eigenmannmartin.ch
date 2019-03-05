@@ -72,7 +72,7 @@ export default {
 
 .accent {
   /* Accent important notes */
-  color: #2a9aad;
+  color: #9e3f5a;
   font-weight: 900;
 }
 
@@ -97,12 +97,12 @@ export default {
 
 <style>
 .vue-typer .custom.char {
-  color: #2a9aad;
+  color: #9e3f5a;
   font-weight: 900;
 }
 
 .vue-typer .custom.caret {
   width: 10px;
-  background-color: #2a9aad;
+  background-color: #9e3f5a;
 }
 </style>
