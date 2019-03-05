@@ -62,7 +62,7 @@ export default {
 
 .background-image-lazy {
   z-index: 999;
-  background-image: url("https://ik.imagekit.io/eigenmannmartin/eigenmannmartinch/us.png?tr=w-800,bl-30,q-50");
+  background-image: url("https://ik.imagekit.io/eigenmannmartin/eigenmannmartinch/us.png?tr=w-800,bl-10,q-50");
 }
 
 .background-image-full {
