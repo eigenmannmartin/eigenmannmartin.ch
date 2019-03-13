@@ -131,7 +131,6 @@ export default {
 
 <style lang="scss" scoped>
 .projects {
-  margin-top: 2.8rem;
   .duration {
     position: absolute;
     margin-top: -20px;

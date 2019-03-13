@@ -38,6 +38,8 @@ export default {
         //["Yii", 40],
         ["Docker", 70],
         ["Kubernetes", 60]
+        //["Wordpress", 60]
+        //["Requirements Engineering", 60]
       ]
     };
   }
@@ -48,7 +50,7 @@ export default {
 <style lang="scss" scoped>
 .list {
   padding: 0;
-  width: 20rem;
+  width: 22rem;
 }
 .list-item {
   display: flex;

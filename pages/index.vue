@@ -22,12 +22,27 @@
 
     <div class="blocks">
       <div class="block-left">
-        <div class="navigation">Project Hightlights</div>
+        <div class="navigation">
+          Project Hightlights
+          <span class="icon-heart icon icon-left"/>
+        </div>
         <projects/>
       </div>
       <div class="block-right">
-        <div class="navigation">Skills</div>
+        <div class="navigation">
+          Skills
+          <span class="icon-laptop icon icon-right"/>
+        </div>
         <skills/>
+
+        <div class="navigation">
+          Work Experience
+          <span
+            class="icon-rocket icon icon-right"
+            style="transform: matrix(-1, 0, 0, 1, 0, 0)"
+          />
+        </div>
+        <workxp/>
       </div>
     </div>
   </div>
@@ -38,27 +53,52 @@ import left from "~/components/left";
 import right from "~/components/right";
 import projects from "~/components/projects";
 import skills from "~/components/skills";
+import workxp from "~/components/workxp";
 
 export default {
   components: {
     left,
     right,
     projects,
-    skills
+    skills,
+    workxp
   }
 };
 </script>
 
+<style global>
+html,
+body {
+  overflow-x: hidden;
+}
+</style>
 <style lang="scss" scoped>
 $navigationHeight: 70px;
 $wafe-height: 120px;
 
 .navigation {
-  margin-top: 1rem;
+  padding: 0;
+  margin: 5rem 0 3.5rem 0;
   height: $navigationHeight;
   line-height: $navigationHeight;
   text-align: center;
   font-size: 2rem;
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+  top: 100px;
+  font-size: 550px;
+  color: rgba(0, 0, 0, 0.05);
+  pointer-events: none;
+}
+
+.icon-left {
+  left: -350px;
+}
+.icon-right {
+  right: -350px;
 }
 
 .block-image {
