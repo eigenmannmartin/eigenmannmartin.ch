@@ -12,7 +12,7 @@
         <h3>Rheumafit.ch</h3>
         <div>
           <div class="stack">
-            <span class="icon-menu"/>Vue, Django, Postmark, Vimeo & Heroku
+            <span class="icon-menu"/>Vue, Django, Vimeo & Heroku
           </div>
           <div class="location">
             <span class="icon-location"/>Bechterew Schweiz

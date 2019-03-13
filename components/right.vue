@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div class="root">
     <particles class="particles"/>
-    <center>
+    <center :vertical="true">
       <div class="inner">
         <p>
           <span class="accent">Hey there.</span>
@@ -56,6 +56,9 @@ export default {
 </script>
 
 <style scoped>
+.root {
+  height: 100%;
+}
 .inner {
   /* Force div to be in foreground */
   position: relative;

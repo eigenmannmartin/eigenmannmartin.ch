@@ -27,6 +27,7 @@
       </div>
       <div class="block-right">
         <div class="navigation">Skills</div>
+        <skills/>
       </div>
     </div>
   </div>
@@ -36,12 +37,14 @@
 import left from "~/components/left";
 import right from "~/components/right";
 import projects from "~/components/projects";
+import skills from "~/components/skills";
 
 export default {
   components: {
     left,
     right,
-    projects
+    projects,
+    skills
   }
 };
 </script>
@@ -74,7 +77,7 @@ $wafe-height: 120px;
   height: calc(100vh + #{$wafe-height});
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
   .blocks {
     display: flex;
   }

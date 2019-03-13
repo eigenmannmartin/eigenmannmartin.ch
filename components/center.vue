@@ -1,19 +1,33 @@
 <template>
-  <div class="root">
+  <div class="root" :style="{
+       alignItems: $props.vertical ? 'center' : false
+    }
+    ">
     <div class="inner">
       <slot/>
     </div>
   </div>
 </template>
 
+<script>
+import center from "~/components/center";
+
+export default {
+  props: {
+    vertical: {
+      default: false
+    }
+  }
+};
+</script>
+
 <style scoped>
 /* CONTAINERS */
 .root {
-  min-height: 100vh;
+  /* min-height: 100vh;*/
   height: 100%;
 
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 
