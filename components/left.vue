@@ -1,36 +1,38 @@
 <template>
   <section class="root">
     <div class="inner">
-      <h3>
-        I'm
-        <span class="accent">Martin</span>
-      </h3>
-      <p v-if="showTyper">
-        <vue-typer
-          :text="['Developer', 'Perfectionist', 'Project Manager', 'Friend', 'Leader']"
-          :shuffle="false"
-          erase-style="backspace"
-          :erase-delay="50"
-          initial-action="typing"
-          :pre-type-delay="1000"
-          caret-animation="smooth"
-          initialAction="erasing"
-        />
-        <br>
-        <span class="workplace-pre">working at&nbsp;</span>
-        <a class="workplace" href="https://www.imaginecargo.com/">IC</a>
-      </p>
-      <p class="social">
-        <a href="https://linkedin.com/in/eigenmannmartin">
-          <span class="icon-linkedin"/>
-        </a>
-        <a href="https://github.com/eigenmannmartin">
-          <span class="icon-github-circled"/>
-        </a>
-        <a href="https://twitter.com/eigenmannmartin">
-          <span class="icon-twitter"/>
-        </a>
-      </p>
+      <div>
+        <h3>
+          I'm
+          <span class="accent">Martin</span>
+        </h3>
+        <p v-if="showTyper">
+          <vue-typer
+            :text="['Developer', 'Perfectionist', 'Project Manager', 'Friend', 'Leader']"
+            :shuffle="false"
+            erase-style="backspace"
+            :erase-delay="50"
+            initial-action="typing"
+            :pre-type-delay="1000"
+            caret-animation="smooth"
+            initialAction="erasing"
+          />
+          <br>
+          <span class="workplace-pre">working at&nbsp;</span>
+          <a class="workplace" href="https://www.imaginecargo.com/">IC</a>
+        </p>
+        <p class="social">
+          <a href="https://linkedin.com/in/eigenmannmartin">
+            <span class="icon-linkedin"/>
+          </a>
+          <a href="https://github.com/eigenmannmartin">
+            <span class="icon-github-circled"/>
+          </a>
+          <a href="https://twitter.com/eigenmannmartin">
+            <span class="icon-twitter"/>
+          </a>
+        </p>
+      </div>
     </div>
   </section>
 </template>
@@ -52,17 +54,16 @@ export default {
 <style scoped>
 .root {
   /* Do not stick it all the way to the bottom */
-  height: 90%;
+  height: 80%;
 
-  /* Cross-browser display: flex; justify-content: center; */
-  display: table;
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
 
 .inner {
-  /* Cross-browser display: flex; self-align: flex-end; */
-  display: table-cell;
-  vertical-align: bottom;
+  z-index: 1010;
+  display: flex;
+  align-self: flex-end;
 
   text-align: center;
 
@@ -72,7 +73,7 @@ export default {
 
 .accent {
   /* Accent important notes */
-  color: #2a9aad;
+  color: #9e3f5a;
   font-weight: 900;
 }
 
@@ -97,12 +98,12 @@ export default {
 
 <style>
 .vue-typer .custom.char {
-  color: #2a9aad;
+  color: #9e3f5a;
   font-weight: 900;
 }
 
 .vue-typer .custom.caret {
   width: 10px;
-  background-color: #2a9aad;
+  background-color: #9e3f5a;
 }
 </style>

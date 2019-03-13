@@ -1,27 +1,24 @@
 <template>
-  <div class="wrapper">
+  <div class="root">
     <div class="inner">
-      <slot />
+      <slot/>
     </div>
   </div>
 </template>
 
 <style scoped>
-  /* CONTAINERS */
-  .wrapper {
-    min-height: 100vh;
-    max-width: 26rem;
-    height: 100%;
-    padding: 0 1rem;
+/* CONTAINERS */
+.root {
+  min-height: 100vh;
+  height: 100%;
 
-    /* Cross-browser display: flex; justify-content: center; */
-    display: table;
-    margin: 0 auto;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  .inner {
-    /* Cross-browser display: flex; align-items: center; */
-    display: table-cell;
-    vertical-align: middle;
-  }
+.inner {
+  max-width: 26rem;
+  padding: 0 1rem;
+}
 </style>
