@@ -1,12 +1,30 @@
 <template>
   <div class="projects">
-    <div>
-      <nuxt-link class="projects-button" to="/">Home</nuxt-link>
-    </div>
+    <buttons/>
 
     <center>
       <div class="title">
         <h2>Project Hightlights</h2>
+      </div>
+
+      <div class="project">
+        <div class="duration">
+          <div class="text">
+            <div class="time-item">2018</div>&#xb7;
+            <div class="time-item">2019</div>
+          </div>
+        </div>
+        <h3>Samba</h3>
+        <div>
+          <div class="stack">
+            <span class="icon-menu"/>Ruby on Rails, Vue, Kubernetes
+          </div>
+          <div class="location">
+            <span class="icon-location"/>ImagineCargo
+          </div>
+        </div>
+        <p>Samba is website plugin that allows customers to book a bike courier picking up donations from their door step. This simplifies processes for non-profit organizations and donors and therefore increases the total volume of donations made.</p>
+        <p>To prove that my newly designed work flows and the chosen technologies are ready for big projects I got tasked with a small scale project, I was able to bring to production within three weeks. Even after finishing the project we were able to improve and modify the software according to customer needs and further show that the project setup is fully functional.</p>
       </div>
 
       <div class="project">
@@ -125,10 +143,12 @@
 
 <script>
 import center from "~/components/center";
+import buttons from "~/components/buttons";
 
 export default {
   components: {
-    center
+    center,
+    buttons
   },
   transition: {
     name: "page"

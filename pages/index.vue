@@ -10,9 +10,8 @@
     <div class="block-right">
       <right/>
     </div>
-    <div>
-      <nuxt-link class="projects-button" to="/projects">Project Highlights</nuxt-link>
-    </div>
+
+    <buttons to="projects" :index="true"/>
   </div>
 </template>
 
@@ -20,12 +19,14 @@
 import left from "~/components/left";
 import right from "~/components/right";
 import center from "~/components/center";
+import buttons from "~/components/buttons";
 
 export default {
   components: {
     left,
     right,
-    center
+    center,
+    buttons
   },
   transition: {
     name: "page"
@@ -49,41 +50,7 @@ body {
 </style>
 
 <style lang="scss" scoped>
-.projects-button {
-  width: 130px;
-  text-align: center;
-  position: fixed;
-  background-color: #9e3f5add;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 1rem;
-  border: 1px solid #9e3f5add;
-  color: rgba(255, 255, 255, 0.9);
-  display: block;
-  border-radius: 5px;
-  margin-top: 2rem;
-  padding: 0.5em 1em;
-  text-decoration: none;
-  transition: all 0.2s;
-  z-index: 1010;
-
-  &:hover {
-    background-color: #9e3f5add;
-    color: rgba(255, 255, 255, 0.9);
-  }
-}
-
 @media screen and (min-width: 800px) {
-  .projects-button {
-    border-style: dashed;
-    background-color: initial;
-    color: #9e3f5a;
-    right: 2rem;
-    top: 1.4rem;
-    bottom: unset;
-    left: unset;
-  }
-
   .block-left {
     /* Positioning */
     float: left;
