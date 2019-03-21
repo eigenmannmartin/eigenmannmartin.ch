@@ -10,26 +10,51 @@
     <div class="block-right">
       <right/>
     </div>
+
+    <buttons to="projects" :index="true"/>
   </div>
 </template>
 
 <script>
 import left from "~/components/left";
 import right from "~/components/right";
+import center from "~/components/center";
+import buttons from "~/components/buttons";
 
 export default {
   components: {
     left,
-    right
+    right,
+    center,
+    buttons
+  },
+  transition: {
+    name: "page"
   }
 };
 </script>
 
-<style>
+<style lang="scss">
+body {
+  overflow-y: scroll;
+}
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.2s ease-out;
+}
+.page-enter,
+.page-leave-active {
+  opacity: 0;
+  transition: opacity 0.2s ease-in;
+}
+</style>
+
+<style lang="scss" scoped>
 @media screen and (min-width: 800px) {
   .block-left {
     /* Positioning */
-    position: fixed;
+    float: left;
+    position: relative;
     left: 0;
 
     /* Sizing (fixed height) */
