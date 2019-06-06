@@ -18,7 +18,7 @@
         />
         <br>
         <span class="workplace-pre">working at&nbsp;</span>
-        <a class="workplace" href="https://www.imaginecargo.com/">IC</a>
+        <a class="workplace" href="https://www.nextag.ch/">Next AG</a>
       </p>
       <p class="social">
         <a href="https://linkedin.com/in/eigenmannmartin">
